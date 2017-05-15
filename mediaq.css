@@ -1,0 +1,62 @@
+/* ≥ 1200px - Large Desktop*/
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* ≥ 992px - Medium Desktop*/
+
+@media only screen and (min-width: 992px) {
+    .one, .two, .three, .four, .five {
+        width: 19.6%;
+    }
+}
+
+/* ≥ 768px - Tablet*/
+
+@media only screen and (min-width: 719px) and (max-width: 992px){
+    header, #home {
+        margin: 30px 40px;
+    }
+    
+    .one, .two, .three, .four, .five {
+        width: 19.5%;
+    }
+    
+    footer .path {
+        width: 24.4%;
+    }
+}
+
+/* < 768px - Mobile*/
+
+@media only screen and (max-width: 719px) {
+    header, #home {
+        margin: 30px 25px;
+    }
+    
+    #home .intro {
+        position: absolute;
+    }
+    
+    #home h1 {
+        font-weight: 400;
+        font-size: 28px;
+        margin: 0;
+    }
+
+    #home p {
+        width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    #home button {
+        background-color: white;
+        height: 60px;
+        font-size: 20px;
+        width: 87%;
+        position: absolute;
+        bottom: 20px;
+    }
+}

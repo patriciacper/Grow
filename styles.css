@@ -1,0 +1,460 @@
+body {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(250,202,79,0.8);
+}
+
+/*Nav*/
+header {
+    margin: 30px 80px;
+    min-height: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav .left, .nav .right {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav li {
+    color: whitE;
+    text-transform: uppercase;
+}
+
+.left li {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.right li {
+    font-size: 14px;
+    font-size: 400;
+    margin-left: 18px;
+}
+
+.right li:hover {
+    text-decoration: underline;
+}
+
+.nav a {
+    color: white;
+}
+
+/*Main*/
+wrapper {
+    clear: both;
+    display: block;
+}
+
+#home {
+    margin: 30px 80px;
+    color: white;
+}
+
+#home .intro {
+    border-left: 3px solid white;
+    padding: 20px 25px;
+    margin: 15% 0 10% 0;
+}
+
+#home h1 {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+}
+
+#home p {
+    width: 65%;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+#home button {
+    background-color: white;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(255,170,79,1);
+    padding: 0 30px;
+    box-shadow: 3px 2px 8px rgba(0,0,0,0.2);
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+#home button:hover {
+    box-shadow: 1px 0.5px 5px rgba(0,0,0,0.2);
+}
+
+.modal {
+    clear: both;
+    display: none;
+    position: absolute;
+    height: 72%;
+    width: 84%;
+    margin: 0 8% 4% 8%;
+    z-index: 8888;
+    top: 80px;
+    background-color: white;
+    box-shadow: 3px 2px 8px rgba(0,0,0,0.2);
+    overflow: scroll;
+}
+
+.modal .topo_nav {
+    margin: 25px 25px 0 25px;
+}
+
+.modal .topo_nav .previous {
+    float: left;
+}
+
+.modal .topo_nav .next, .modal .topo_nav .finish, .modal .topo_nav .close {
+    float: right;
+}
+
+.modal .topo_nav .close, .modal .topo_nav .finish {
+    display: none;
+}
+
+.modal .topo_nav li {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255,170,79,1);
+    cursor: pointer;
+}
+
+.modal .topo_nav li:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: block;
+    clear: both;
+    margin: 40px 25px 0 25px;
+}
+
+.content .intro {
+    display: none;
+    border-left: 3px solid #96c963;
+    padding: 10px 25px;
+    margin: 12% 0 15.5% 5%;
+}
+
+.content .second {
+    display: none;
+    padding: 10px 25px;
+    margin: 5% 5% 5.5% 5%;
+}
+
+.content .second h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.content .second p {
+    margin-top: 3px;
+    width: 100%;
+    text-align: center;
+}
+
+.content .third {
+    display: none;
+    padding: 10px 25px;
+    margin: 5% 5% 5.5% 5%;
+}
+
+.content .third h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.content .third p {
+    margin-top: 3px;
+    width: 100%;
+    text-align: center;
+}
+
+.content .fourth {
+    display: none;;
+    padding: 10px 25px;
+    margin: 5% 5% 5.5% 5%;
+}
+
+.content .fourth h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.content .fourth h2 {
+    text-align: right;
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    line-height: 42px;
+    margin: 0;
+    float: left;
+}
+
+.content .fourth p {
+    margin-top: 3px;
+    width: 100%;
+    text-align: center;
+}
+
+.content .fourth .round {
+    display: inline-block;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+/*    background-color: #96c963;*/
+    border: 4px solid #96c963;
+    opacity: 0.5;
+    float: right;
+}
+
+.content .fourth .levels {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+
+.content .fourth .levels p {
+    clear: both;
+    color: rgba(0,0,0,0.4);
+    text-align: right;
+    margin: 0;
+    width: 96%;
+}
+
+.content .fourth .time {
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+
+.content .fourth .skills {
+    width: 47%;
+    display: inline-block;
+    float: right;
+}
+
+.content .final {
+    vertical-align: top;
+    display: inline-block;
+    width: 60%;
+    border-left: 3px solid #96c963;
+    padding: 10px 0px 10px 25px;
+    margin: 8.5% 0 10% 5%;
+}
+
+.content .result .radish {
+    display: inline-block;
+    width: 16%;
+    margin-top: 45px;
+}
+.content .options ul {
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.content .options li {
+    display: inline-block;
+    width: 22%;
+    cursor: pointer;
+}
+
+.content .options .one {
+    float: left;
+    opacity: 0.5;
+}
+
+.content .options .two {
+    margin-left: 17%;
+    opacity: 0.5;
+}
+
+.content .options .three {
+    float: right;
+    opacity: 0.5;
+}
+
+.content .options img {
+    max-width: 100%;
+}
+
+.modal h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.modal p {
+    width: 65%;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.modal #bottom {
+    bottom: 10px;
+}
+
+.modal #bottom p {
+    width: 65%;
+    margin-left: 17.5%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.modal .b-intro {
+    display: none;
+    color: rgba(0,0,0,0.4);
+}
+
+.modal .b-second {
+    display: none;
+    color: rgba(0,0,0,0.4);
+}
+
+.modal .b-third {
+    display: none;
+    color: rgba(0,0,0,0.4);
+}
+
+.modal .opt1 {
+    color: black;
+    display: none;
+}
+
+.modal .b-final {
+    text-align: left;
+    margin-left: 7%;
+}
+
+.modal .b-final p {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0,0,0,0.4);
+    margin: 0;
+}
+
+.modal .b-final .download {
+    width: 35%;
+    margin-top: 15px;
+}
+
+.modal .b-final .google {
+    width: 46%;
+    display: inline-block;
+}
+
+.modal .b-final .apple {
+    width: 39.5%;
+    display: inline-block;
+}
+
+footer {
+    display: none;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+}
+
+.breadcrumbs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 8888;
+}
+
+.one, .two, .three, .four, .five {
+    display: inline-block;
+    width: 19.7%;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+footer #active-txt {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .crumb {
+    display: inline-block;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: 2px solid white;
+    background-color: rgba(250,202,79,0.8);
+}
+
+footer #active-crumb {
+    background-color: white;
+}
+
+footer .connectings {
+    width: 80%;
+    margin-left: 10%;
+    position: absolute;
+    height: 15px;
+    bottom: 5px;
+    z-index: 7777;
+}
+
+footer .path {
+    display: inline-block;
+    width: 24.5%;
+    height: 7px;
+    border-top: 2px dashed white;
+}
+
+footer #active-path {
+    border-top: 2px solid white;
+}
