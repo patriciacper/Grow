@@ -69,6 +69,7 @@ wrapper {
 }
 
 #home {
+    display: none;
     margin: 30px 80px;
     color: white;
 }
@@ -116,7 +117,7 @@ button:focus {
 
 .modal {
     clear: both;
-    display: none;
+    display: block;
     position: absolute;
     height: 72%;
     width: 84%;
@@ -162,7 +163,7 @@ button:focus {
 }
 
 .content .intro {
-    display: none;
+/*    display: none;*/
     border-left: 3px solid #96c963;
     padding: 10px 25px;
     margin: 12% 0 15.5% 5%;
@@ -203,7 +204,7 @@ button:focus {
 }
 
 .content .fourth {
-    display: none;;
+    display: none;
     padding: 10px 25px;
     margin: 5% 5% 5.5% 5%;
 }
@@ -267,6 +268,10 @@ button:focus {
     display: inline-block;
     float: right;
 }
+
+.content .result {
+    display: none;
+} 
 
 .content .final {
     vertical-align: top;
@@ -340,7 +345,7 @@ button:focus {
 }
 
 .modal .b-intro {
-    display: none;
+/*    display: none;*/
     color: rgba(0,0,0,0.4);
 }
 
@@ -360,6 +365,7 @@ button:focus {
 }
 
 .modal .b-final {
+    display: none;
     text-align: left;
     margin-left: 7%;
 }
@@ -387,7 +393,7 @@ button:focus {
 }
 
 footer {
-    display: none;
+/*    display: none;*/
     bottom: 0;
     position: absolute;
     width: 100%;

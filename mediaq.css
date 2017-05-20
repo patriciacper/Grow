@@ -19,8 +19,24 @@
         margin: 30px 40px;
     }
     
+    .content .intro {
+       margin-top: 17%;
+    }
+    
     .one, .two, .three, .four, .five {
         width: 19.5%;
+    }
+    
+    .content .result .radish {
+        width: 20%;
+    }
+    
+    .content .result p {
+        width: 90%;
+    }
+    
+    .modal .b-final .download {
+        width: 45%;
     }
     
     footer .path {
