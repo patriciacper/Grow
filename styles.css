@@ -3,10 +3,12 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgba(250,202,79,0.8);
+    background-color: rgba(250, 202, 79, 0.8);
 }
 
+
 /*Nav*/
+
 header {
     margin: 30px 80px;
     min-height: 20px;
@@ -18,7 +20,8 @@ ul {
     margin: 0;
 }
 
-.nav .left, .nav .right {
+.nav .left,
+.nav .right {
     display: inline-block;
 }
 
@@ -62,7 +65,9 @@ a {
     color: white;
 }
 
+
 /*Main*/
+
 wrapper {
     clear: both;
     display: block;
@@ -100,9 +105,9 @@ wrapper {
     height: 60px;
     font-size: 22px;
     font-weight: 400;
-    color: rgba(255,170,79,1);
+    color: rgba(255, 170, 79, 1);
     padding: 0 30px;
-    box-shadow: 3px 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
 }
@@ -112,7 +117,7 @@ button:focus {
 }
 
 #home button:hover {
-    box-shadow: 1px 0.5px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 0.5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .modal {
@@ -125,7 +130,7 @@ button:focus {
     z-index: 8888;
     top: 80px;
     background-color: white;
-    box-shadow: 3px 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.2);
     overflow: scroll;
 }
 
@@ -137,18 +142,21 @@ button:focus {
     float: left;
 }
 
-.modal .topo_nav .next, .modal .topo_nav .finish, .modal .topo_nav .close {
+.modal .topo_nav .next,
+.modal .topo_nav .finish,
+.modal .topo_nav .close {
     float: right;
 }
 
-.modal .topo_nav .close, .modal .topo_nav .finish {
+.modal .topo_nav .close,
+.modal .topo_nav .finish {
     display: none;
 }
 
 .modal .topo_nav li {
     font-size: 12px;
     font-weight: 700;
-    color: rgba(255,170,79,1);
+    color: rgba(255, 170, 79, 1);
     cursor: pointer;
 }
 
@@ -163,7 +171,7 @@ button:focus {
 }
 
 .content .intro {
-/*    display: none;*/
+    /*    display: none;*/
     border-left: 3px solid #96c963;
     padding: 10px 25px;
     margin: 12% 0 15.5% 5%;
@@ -237,7 +245,7 @@ button:focus {
     height: 35px;
     margin-right: 8px;
     margin-bottom: 3px;
-/*    background-color: #96c963;*/
+    /*    background-color: #96c963;*/
     border: 4px solid #96c963;
     opacity: 0.5;
     float: right;
@@ -251,7 +259,7 @@ button:focus {
 
 .content .fourth .levels p {
     clear: both;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
     text-align: right;
     margin: 0;
     width: 96%;
@@ -269,9 +277,14 @@ button:focus {
     float: right;
 }
 
+.content .fourth .skills p,
+.content .fourth .time p {
+    display: none;
+}
+
 .content .result {
     display: none;
-} 
+}
 
 .content .final {
     vertical-align: top;
@@ -287,6 +300,7 @@ button:focus {
     width: 16%;
     margin-top: 45px;
 }
+
 .content .options ul {
     width: 75%;
     margin-left: 10%;
@@ -345,18 +359,18 @@ button:focus {
 }
 
 .modal .b-intro {
-/*    display: none;*/
-    color: rgba(0,0,0,0.4);
+    /*    display: none;*/
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .modal .b-second {
     display: none;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .modal .b-third {
     display: none;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .modal .opt1 {
@@ -373,7 +387,7 @@ button:focus {
 .modal .b-final p {
     font-size: 14px;
     line-height: 22px;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
     margin: 0;
 }
 
@@ -393,7 +407,7 @@ button:focus {
 }
 
 footer {
-/*    display: none;*/
+    /*    display: none;*/
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -412,7 +426,11 @@ footer {
     z-index: 8888;
 }
 
-.one, .two, .three, .four, .five {
+.one,
+.two,
+.three,
+.four,
+.five {
     display: inline-block;
     width: 19.7%;
     text-align: center;
@@ -438,7 +456,7 @@ footer .crumb {
     height: 15px;
     width: 15px;
     border: 2px solid white;
-    background-color: rgba(250,202,79,0.8);
+    background-color: rgba(250, 202, 79, 0.8);
 }
 
 footer #active-crumb {
@@ -463,4 +481,13 @@ footer .path {
 
 footer #active-path {
     border-top: 2px solid white;
+}
+
+.opt1 {
+    display: none;
+}
+
+.active-opt {
+    display: block;
+    color: black;
 }
