@@ -67,8 +67,10 @@ var registerListeners = function () {
         $(".close").hide();
         $("footer").hide();
         $(".fourth").find(".round").css("background", "none");
+        $(".fourth").find(".round").css("opacity", "0.5");
         $(".fourth").find("p").hide();
         $("#home").show();
+        $(".opt").css("opacity", 0.5);
     });
 
     $("button").on("click", function () {
@@ -82,11 +84,14 @@ var registerListeners = function () {
 
     $(".round").on("click", function () {
         var selectedLevel = $(this).attr("data-id"),
-            selectedType = $(this).parent().attr("class");
+            selectedType = $(this).parent().parent().attr("class");
 
-        $(this).css("background-color", "green");
-        $(this).nextAll(".round").css("background-color", "green");
-        $(this).prevAll(".round").css("background", "none");
+        $(this).css("background-color", "#96c963");
+        $(this).css("opacity", "1");
+        $(this).prevAll(".round").css("background-color", "#96c963");
+        $(this).prevAll(".round").css("opacity", "1");
+        $(this).nextAll(".round").css("background", "none");
+        $(this).nextAll(".round").css("opacity", "0.5");
 
         $("p." + selectedType).hide();
         $("." + selectedType + "." + selectedLevel).show();
