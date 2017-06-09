@@ -96,6 +96,46 @@ var registerListeners = function () {
         $("p." + selectedType).hide();
         $("." + selectedType + "." + selectedLevel).show();
     });
+    
+    $(".next").on("click", function () {
+        var visiblePage = $(".page:visible"),
+            visibleCrumb = $(visiblePage).attr("id");
+
+        if (visibleCrumb === "fourth") {
+            $(".crumb-" + visibleCrumb).children().children("p").css("font-size", "16px");
+            $(".crumb-" + visibleCrumb).children().children("p").css("font-weight", "400");
+        } else {
+            $(".crumb-" + visibleCrumb).children("p").css("font-size", "16px");
+            $(".crumb-" + visibleCrumb).children("p").css("font-weight", "400");
+        }
+        
+        $(".crumb-" + visibleCrumb).children(".crumb").css("background-color", "white");
+        $(".path-" + visibleCrumb).css("border-top", "2px solid white");
+    });
+    
+    $(".opt").on("click", function () {
+        var selectedOption = $(this).attr("data-title");
+        var visiblePage = $(".page:visible"),
+            visibleCrumb = $(visiblePage).attr("id");
+        
+        $(".crumb-" + visibleCrumb).children("p").text(selectedOption);
+    });
+    
+    $(".know").on("click", function () {
+        var selectedOption = $(this).attr("data-title");
+        var visiblePage = $(".page:visible"),
+            visibleCrumb = $(visiblePage).attr("id");
+        
+        $(".crumb-" + visibleCrumb).children().children(".how-know").text(selectedOption);
+    });
+    
+    $(".timer").on("click", function () {
+        var selectedOption = $(this).attr("data-title");
+        var visiblePage = $(".page:visible"),
+            visibleCrumb = $(visiblePage).attr("id");
+        
+        $(".crumb-" + visibleCrumb).children().children(".how-time").text(selectedOption);
+    });
 }
 
 $(document).ready(function () {

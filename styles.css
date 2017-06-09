@@ -454,6 +454,10 @@ footer {
     z-index: 8888;
 }
 
+.breadcrumbs .four p {
+    display: inline-block;
+}
+
 .one,
 .two,
 .three,
