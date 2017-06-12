@@ -1,4 +1,16 @@
+var resetModal, resetFoot;
+
 var registerListeners = function () {
+    $("button").on("click", function () {
+        var resetModal = $(".modal").clone();
+        var resetFoot = $("footer").clone();
+    });
+    
+    $(".close").on("click", function () {
+        $(".modal").remove();
+        $("footer").remove();
+    });
+    
     $(".opt").on("click", function () {
         var option = $(this).attr("data-id");
         var page = $(this).parents(".page").attr("id");

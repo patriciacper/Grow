@@ -1,6 +1,6 @@
 /* ≥ 1200px - Large Desktop*/
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
 
 }
 
@@ -14,7 +14,7 @@
 
 /* ≥ 768px - Tablet*/
 
-@media only screen and (min-width: 719px) and (max-width: 992px){
+@media only screen and (min-width: 768px) and (max-width: 992px){
     header, #home {
         margin: 30px 40px;
     }
@@ -104,7 +104,7 @@
 
 /* < 768px - Mobile*/
 
-@media only screen and (max-width: 719px) {
+@media only screen and (max-width: 768px) {
     header, #home {
         margin: 30px 25px;
     }
