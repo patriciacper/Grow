@@ -2,13 +2,24 @@ var resetModal, resetFoot;
 
 var registerListeners = function () {
     $("button").on("click", function () {
-        var resetModal = $(".modal").clone();
-        var resetFoot = $("footer").clone();
+        resetModal = $(".modal").clone(true);
+        resetFoot = $("footer").clone(true);
     });
     
     $(".close").on("click", function () {
         $(".modal").remove();
         $("footer").remove();
+        resetModal.appendTo("wrapper");
+        resetFoot.insertAfter("main");
+        $("#home").show();
+    });
+    
+    $(".home-btn").on("click", function () {
+        $(".modal").remove();
+        $("footer").remove();
+        resetModal.appendTo("wrapper");
+        resetFoot.insertAfter("main");
+        $("#home").show();
     });
     
     $(".opt").on("click", function () {
@@ -71,27 +82,10 @@ var registerListeners = function () {
 
     });
 
-    $(".close").on("click", function () {
-        $(".modal").hide();
-        $(".result").hide();
-        $(".b-final").hide();
-        $(".previous").hide();
-        $(".close").hide();
-        $("footer").hide();
-        $(".fourth").find(".round").css("background", "none");
-        $(".fourth").find(".round").css("opacity", "0.5");
-        $(".fourth").find("p").hide();
-        $("#home").show();
-        $(".opt").css("opacity", 0.5);
-    });
-
     $("button").on("click", function () {
         $("#home").hide();
         $(".modal").show();
         $("footer").show();
-        $(".intro").show();
-        $(".b-intro").show();
-        $(".next").show();
     });
 
     $(".round").on("click", function () {
