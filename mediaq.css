@@ -109,6 +109,11 @@
         margin: 30px 25px;
     }
     
+    footer {
+        display: none;
+        visibility: hidden;
+    }
+    
     #home .intro {
         position: absolute;
     }
@@ -134,6 +139,42 @@
         bottom: 20px;
     }
     
+    .modal {
+        width: 90%;
+        margin-left: 5%;
+        height: 85%;
+    }
+    
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 60px;
+    }
+    
+    #intro {
+        margin-top: 100px;
+    }
+    
+    .content .second, .content .third, .content .fourth {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .content h1 {
+        width: 100%;
+        font-size: 22px;
+    }
+    
+    .content #intro p {
+        width: 100%;
+    }
+    
+    .content .options ul {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    
     .content .options li {
         display: inline-block;
         width: 27%;
@@ -142,5 +183,45 @@
     
     .content .options .two {
         margin-left: 9.5%;
+    }
+    
+    .content .fourth .levels {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 40px;
+    } 
+    
+    .content .fourth .time {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px;
+    }
+    
+    .content .fourth .skills {
+        width: 100%;
+        float: none;
+    }
+    
+    .content .fourth h2 {
+        display: block;
+        text-align: left;
+    }
+    
+    .content .fourth .circles {
+        display: block;
+        float: left;
+        width: 85%;
+    }
+
+    .content .fourth .levels p {
+        float: left;
+        text-align: left;
+    }
+    
+    .modal #bottom p {
+        width: 95%;
+        margin-left: 2.5%;
+        text-align: center;
+        font-size: 14px;
     }
 }
