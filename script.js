@@ -9,7 +9,7 @@ var registerListeners = function () {
     $(".close").on("click", function () {
         $(".modal").remove();
         $("footer").remove();
-        resetModal.appendTo("wrapper");
+        resetModal.appendTo(".wrapper");
         resetFoot.insertAfter("main");
         $("#home").show();
     });
@@ -17,7 +17,7 @@ var registerListeners = function () {
     $(".home-btn").on("click", function () {
         $(".modal").remove();
         $("footer").remove();
-        resetModal.appendTo("wrapper");
+        resetModal.appendTo(".wrapper");
         resetFoot.insertAfter("main");
         $("#home").show();
     });

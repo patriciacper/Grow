@@ -72,7 +72,7 @@ a {
 
 /*Main*/
 
-wrapper {
+.wrapper {
     clear: both;
     display: block;
 }
